@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import TextForm from './components/TextForm'
-// import About from './components/About'
+import About from './components/About'
 import Alert from './components/Alert'
 // import {
 //   BrowserRouter as Router,
@@ -47,20 +47,22 @@ function App() {
     <br />
     <Alert alert={alert}/>
     <br />
-    <div className="container my-3">
+    {/* <About mode = {mode}/> */}
+    {/* <div className="container my-3"> */}
       {/* <Switch> */}
         {/* <Route exact path="/about"> */}
-          {/* <About mode = {mode}/> */}
+          <About mode = {mode}/>
+          <br /><br />
         {/* </Route> */}
         {/* <Route exact path="/"> */}
-          <TextForm showAlert={showAlert} mode = {mode} heading="Enter the text to analyze"/>
+          {/* <TextForm showAlert={showAlert} mode = {mode} heading="Enter the text to analyze"/> */}
         {/* </Route> */}
       {/* </Switch> */}
       
       {/* <TextForm showAlert={showAlert} mode = {mode} heading="Enter the text to analyze"/>
       <br /> */}
       {/* <About /> */}
-    </div>
+    {/* </div> */}
   {/* </Router> */}
   </>
   )
